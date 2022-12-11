@@ -1,0 +1,193 @@
+@font-face {
+    font-family: "TT Lakes Black";
+    font-style: normal;
+    font-weight: 900;
+    src: local('TT Lakes Black'), local('TTLakes-Black'),
+        url("/fonts/TTLakes-Black.eot") format('embedded-opentype'),
+        url("/fonts/TTLakes-Black.woff") format('woff'),
+        url("/fonts/TTLakes-Black.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: "TT Lakes";
+    font-style: normal;
+    font-weight: normal;
+    src: local('TT Lakes Regular'), local('TTLakes-Regular'),
+        url("/fonts/TTLakes-Black.eot") format('embedded-opentype'),
+        url("/fonts/TTLakes-Regular.woff") format('woff'),
+        url("/fonts/TTLakes-Regular.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: "TT Lakes Bold";
+    font-style: normal;
+    font-weight: normal;
+    src: local('TT Lakes Bold'), local('TTLakes-Bold'),
+        url("/fonts/TTLakes-Bold.eot") format('embedded-opentype'),
+        url("/fonts/TTLakes-Bold.woff") format('woff'),
+        url("/fonts/TTLakes-Bold.ttf") format('truetype');
+}
+
+html{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: row;
+    margin: 0em;
+}
+
+/* .content_short{
+    display: flex;
+    cursor: pointer;
+    transform: translateX(-100%);
+} */
+
+.content{
+    display: flex;
+    flex-direction: column;
+    padding-top: 18.73px;
+    width: 320px;
+    height: 1024px;
+    box-shadow: 16px 0px 52px 0px rgba(14,24,80,0.2), -2px 0px 4px 0px rgba(69,79,126,0.02);
+}
+
+p{
+    font-family: 'TT Lakes', 'TT Lakes Bold', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.icons-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.icons-top div{
+    display: flex;
+    width: 48%;
+    justify-content: space-between;
+}
+
+.icons-top a{
+    display: flex;
+    align-items: center;
+}
+
+.menu{
+    font-family: 'TT Lakes', 'TT Lakes Bold', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #1B1C21;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    margin-top: 46px;
+    margin-bottom: 244px;
+}
+
+.menu a{
+    display: flex;
+    margin-bottom: 24px;
+    height: 32px;
+    align-items: center;
+    text-decoration: none;
+    color: #1B1C21;
+}
+
+.menu p{
+    padding-left: 24px;
+}
+
+.menu a:hover {
+    color: #7E7E82;
+    background-image: url("../img/highlight.svg");
+    background-position: 0%;
+    background-repeat: no-repeat;
+}
+
+.icons-down{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 44%;
+    padding-left: 24px;
+}
+
+.contact{
+    color: #1B1C21;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    font-weight: bold;
+    padding-left: 24px;
+    margin-bottom: 16px;
+}
+
+p[phone]{
+    font-family: 'TT Lakes Bold', 'TT Lakes', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.6px;
+}
+
+.lang{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 24px;
+}
+
+.lang_box {
+	display: flex;
+	margin-right: 7px;
+}
+
+.lang_box input[type=radio] {
+	display: none;
+}
+
+.lang_box label {
+	font-weight: bold;
+    background-color: white;
+    font-family: 'TT Lakes', 'TT Lakes Bold', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+}
+
+.lang_box input[type=radio]:checked + label {
+	color: #7E7E82;
+}
+
+.lang_box label:hover {
+	color: #7E7E82;
+}
+
+button{
+    background-color: transparent;
+    border: 0px;
+    cursor: pointer;
+    transition: 12s linear 10s;
+}
+
+/* .close:active .content{
+    display: none;
+} */
+
+/* .content_short:focus-within{
+    display: none;
+    transform: translateX(-100%);
+}
+
+.content_short:focus-within ~ .content{
+    display: flex;
+    transform: translateX(0);
+}
+
+button:target{
+    display: none;
+} */
+
+/* button:hover ~ .content{
+    display: flex;
+    transition: .2s ease-in 10s;
+} */
